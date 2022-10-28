@@ -1,4 +1,4 @@
-name: CT workflow
+name: CT Workflow
 on:
   workflow_dispatch:
   push:
