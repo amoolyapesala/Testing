@@ -59,7 +59,7 @@ jobs:
           set -e -x
           wget https://detect.synopsys.com/detect7.sh
           chmod +x detect7.sh 
-          ./detect7.sh --blackduck.url="https://ingka.app.blackduck.com" --blackduck.api.token=${{secrets.BLACKDUCK_TOKEN}} --detect.project.name="tez/juice-shop" --detect.project.version.name="V.1" --detect.source.path="../" --detect.detector.search.depth=8 --detect.npm.include.dev.dependencies=true --detect.project.version.distribution="SAAS"
+          ./detect7.sh --blackduck.url="https://ingka.app.blackduck.com" --blackduck.api.token=${{secrets.BLACKDUCK_TOKEN}} --detect.project.name="tez/juice-shop" --detect.project.version.name="V.1.2" --detect.source.path="../" --detect.detector.search.depth=8 --detect.npm.include.dev.dependencies=true --detect.project.version.distribution="SAAS"
           
   SonarQube:
     name: SonarQube
